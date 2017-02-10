@@ -1,5 +1,6 @@
 ﻿html, body {
     height: 100%;
+    background-color: lightgrey;
 }
 
 body {
@@ -25,9 +26,11 @@ body {
     background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background-9.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: repeat-y;
-    height: 100%;
+    background-repeat: repeat;
+    height: auto;
     width: 100%;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 #sidebar-about-us-content, #sidebar-contact-content, #sidebar-product-content {
@@ -104,15 +107,14 @@ body {
     border-radius: 25px;
     background-color: blue;
     color: white;
+    transition: all 0.4s;
 }
 
 .return-link:hover {
     text-decoration: none;
-    color: white;
-}
-
-.return-link:visited {
-    text-decoration: none;
+    color: black;
+    border: 5px solid lightblue;
+    background-color: lightblue;
 }
 
 .edit-link {
@@ -120,6 +122,8 @@ body {
     border-radius: 25px;
     background-color: #ff99cc;
     color: black;
+    transition: all .4s;
+    width: 200px;
 }
 
 .edit-link:hover {
@@ -136,6 +140,7 @@ body {
     border-radius: 25px;
     background-color: #ff3333;
     color: black;
+    transition: all .4s;
 }
 
 .delete-link:hover {
@@ -194,8 +199,8 @@ body {
 #add-product-button {
     position: absolute;
     position: fixed;
-    bottom: 45px;
-    right: 45px;
+    bottom: 2%;
+    right: 2%;
     border: 2px solid green;
     background-color: green;
     height: 100px;
@@ -204,6 +209,17 @@ body {
     border-radius: 50px;
     color: white;
     text-decoration: none;
+    transition: all .4s;
+}
+
+#add-product-button span {
+
+}
+
+#add-product-button:hover {
+    border: 2px solid lightgreen;
+    background-color: lightgreen;
+    color: black;
 }
 
 /*Create Product*/
@@ -242,6 +258,13 @@ body {
     outline: none;
     background-color: green;
     color: white;
+    transition: all .4s;
+}
+
+.submit-button:hover {
+    border: 5px solid lightgreen;
+    background-color: lightgreen;
+    color: black;
 }
 
 /*Details*/
@@ -306,12 +329,19 @@ body {
     margin-top: 5%;
 }
 
-.submit-button {
-    border: 5px solid green;
+.edit-button {
+    border: 5px solid #ff75ba;
     border-radius: 40px;
     outline: none;
-    background-color: green;
+    background-color: #ff75ba;
     color: white;
+    transition: all .4s;
+}
+
+.edit-button:hover {
+    border: 5px solid #ffa5d2;
+    background-color: #ffa5d2;
+    color: black;
 }
 
 /*Delete Product*/
@@ -342,4 +372,11 @@ body {
     outline: none;
     background-color: red;
     color: white;
+    transition: all 0.4s;
+}
+
+.delete-button:hover {
+    border: 5px solid #ffb3b3;
+    background-color: #ffb3b3;
+    color: black;
 }
