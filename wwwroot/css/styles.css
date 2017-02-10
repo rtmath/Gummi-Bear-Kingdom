@@ -149,7 +149,7 @@ body {
 
 /*Products Index*/
 
-.product-index-header, .product-create-header {
+.product-index-header, .product-create-header, .product-edit-header, .product-details-header {
     margin: 0;
 }
 
@@ -274,3 +274,40 @@ body {
     font-weight: 400;
 }
 
+/*Edit Product*/
+
+.edit-form-container {
+    background-color: #b3e0ff;
+    margin-left: auto;
+    margin-right: auto;
+        margin-bottom: 5%;
+    width: 60%;
+    padding: 1%;
+    box-shadow: 1px 1px 1px black;
+}
+
+.edit-form-container form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.edit-form-container input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+.edit-form-container button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.submit-button {
+    border: 5px solid green;
+    border-radius: 40px;
+    outline: none;
+    background-color: green;
+    color: white;
+}
