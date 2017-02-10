@@ -1,12 +1,12 @@
 ﻿@model GummiBearKingdom.Models.Product
 
-<h1>Create</h1>
+<h1>Edit</h1>
 
-<form asp-controller="Products" asp-action="Create" method="post">
+<form asp-controller="Products" asp-action="Edit" method="post">
     <div class="form-group">
         <label>Product Name</label>
         <input asp-for="Name" class="form-control" />
-    
+
         <label>Description</label>
         <input asp-for="ProductDescription" maxlength="255" class="form-control" />
 
@@ -16,7 +16,7 @@
         <label>Country of Origin</label>
         <input asp-for="CountryOfOrigin" class="form-control" />
 
-        <button type="submit">Add New Product</button>
+        <button type="submit">Update</button>
     </div>
 </form>
 

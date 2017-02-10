@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GummiBearKingdom.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace GummiBearKingdom.Controllers
 {
@@ -31,6 +32,19 @@ namespace GummiBearKingdom.Controllers
         {
             var selectedProduct = db.Products.FirstOrDefault(p => p.Id == id);
             return View(selectedProduct);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            var selectedProduct = db.Products.FirstOrDefault(p => p.Id == id);
+            return View(selectedProduct);
+        }
+        [HttpPost]
+        public IActionResult Edit(Product product)
+        {
+            db.Entry(product).State = EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

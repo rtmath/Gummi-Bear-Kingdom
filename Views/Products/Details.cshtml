@@ -6,7 +6,7 @@
 <p>@Model.ProductDescription</p>
 <h4>@Model.CountryOfOrigin</h4>
 <h4>@Model.Cost</h4>
-<span>@Html.ActionLink("Edit", "Edit") | @Html.ActionLink("Delete", "Delete")</span>
+<span>@Html.ActionLink("Edit", "Edit", new { id = @Model.Id }) | @Html.ActionLink("Delete", "Delete", new { id = @Model.Id })</span>
 <hr />
 
 @Html.ActionLink("Back to Products", "Index")
