@@ -149,7 +149,9 @@ body {
 
 /*Products Index*/
 
-.product-index-header, .product-create-header, .product-edit-header, .product-details-header {
+.product-index-header, .product-create-header, 
+    .product-edit-header, .product-details-header,
+    .product-delete-header {
     margin: 0;
 }
 
@@ -309,5 +311,35 @@ body {
     border-radius: 40px;
     outline: none;
     background-color: green;
+    color: white;
+}
+
+/*Delete Product*/
+
+.delete-form-container {
+    background-color: #b3e0ff;
+    margin-left: auto;
+    margin-right: auto;
+        margin-bottom: 5%;
+    width: 60%;
+    padding: 1%;
+    box-shadow: 1px 1px 1px black;
+}
+
+.delete-form-container p {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.delete-form-container strong {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.delete-button {
+    border: 5px solid red;
+    border-radius: 40px;
+    outline: none;
+    background-color: red;
     color: white;
 }
