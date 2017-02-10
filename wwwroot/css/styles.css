@@ -101,7 +101,7 @@ body {
 
 /*Products Index*/
 
-#product-index-header {
+.product-index-header, .product-create-header {
     margin: 0;
 }
 
@@ -127,15 +127,15 @@ body {
 }
 
 .product-flex-img-border {
-    border: 5px solid #fff0e6;
+    border: 5px solid #b3e0ff;
     max-width: 300px;
     margin: auto;
     box-shadow: 1px 1px 1px black;
 }
 
 .product-flex-content-border {
-    border: 5px solid #fff0e6;
-    background-color: #fff0e6;
+    border: 5px solid #b3e0ff;
+    background-color: #b3e0ff;
     max-width: 300px;
     margin: auto;
     box-shadow: 1px 1px 1px black;
@@ -153,5 +153,59 @@ body {
     padding: 25px;
     border-radius: 50px;
     color: white;
+    text-decoration: none;
+}
+
+/*Create Product*/
+
+.create-form-container {
+    background-color: #b3e0ff;
+    margin-left: auto;
+    margin-right: auto;
+        margin-bottom: 5%;
+    width: 60%;
+    padding: 1%;
+    box-shadow: 1px 1px 1px black;
+}
+
+.create-form-container form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.create-form-container input {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+.create-form-container button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.submit-button {
+    border: 5px solid green;
+    border-radius: 40px;
+    outline: none;
+    background-color: green;
+    color: white;
+}
+
+.return-link {
+    border: 5px solid blue;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}
+
+.return-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.return-link:visited {
     text-decoration: none;
 }
