@@ -2,11 +2,16 @@
 
 <h1>Details</h1>
 
-<h2>@Model.Name</h2>
-<p>@Model.ProductDescription</p>
-<h4>@Model.CountryOfOrigin</h4>
-<h4>@Model.Cost</h4>
-<span>@Html.ActionLink("Edit", "Edit", new { id = @Model.Id }) | @Html.ActionLink("Delete", "Delete", new { id = @Model.Id })</span>
-<hr />
+<div class="details-container">
+    <div class="details-content-inline">
+        <span id="details-content-name">@Model.Name</span>
+        <span id="details-content-cost">$@Model.Cost</span>
+    </div><br />
+    <span id="details-content-coo">From: @Model.CountryOfOrigin</span>
+    <br />
+    <span id="details-content-desc">@Model.ProductDescription</span>
+    <hr />
+    <span>@Html.ActionLink("Edit", "Edit", new { id = @Model.Id }, new { @class = "edit-link"}) | @Html.ActionLink("Delete", "Delete", new { id = @Model.Id }, new { @class = "delete-link" })</span>
+</div>
 
-@Html.ActionLink("Back to Products", "Index")
+<a href="/Products" class="return-link">Return to Products</a>

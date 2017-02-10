@@ -99,6 +99,54 @@ body {
     text-decoration: none;
 }
 
+.return-link {
+    border: 5px solid blue;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}
+
+.return-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.return-link:visited {
+    text-decoration: none;
+}
+
+.edit-link {
+    border: 5px solid #ff99cc;
+    border-radius: 25px;
+    background-color: #ff99cc;
+    color: black;
+}
+
+.edit-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.edit-link:visited {
+    text-decoration: none;
+}
+
+.delete-link {
+    border: 5px solid #ff3333;
+    border-radius: 25px;
+    background-color: #ff3333;
+    color: black;
+}
+
+.delete-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.delete-link:visited {
+    text-decoration: none;
+}
+
 /*Products Index*/
 
 .product-index-header, .product-create-header {
@@ -194,18 +242,35 @@ body {
     color: white;
 }
 
-.return-link {
-    border: 5px solid blue;
-    border-radius: 25px;
-    background-color: blue;
-    color: white;
+/*Details*/
+
+.details-container {
+    background-color: #b3e0ff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 60%;
+    padding: 1%;
+    box-shadow: 1px 1px 1px black;
 }
 
-.return-link:hover {
-    text-decoration: none;
-    color: white;
+.details-content-inline {
+    display: inline;
 }
 
-.return-link:visited {
-    text-decoration: none;
+#details-content-name {
+    font-size: 38px;
+    font-weight: 600;
+    margin-right: 5%;
 }
+
+#details-content-cost {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+#details-content-desc {
+    font-size: 28px;
+    font-weight: 400;
+}
+
