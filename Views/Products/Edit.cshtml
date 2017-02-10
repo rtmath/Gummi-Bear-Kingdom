@@ -11,7 +11,7 @@
         <input asp-for="ProductDescription" maxlength="255" class="form-control" />
 
         <label>Cost</label>
-        <input range="number" asp-for="Cost" class="form-control" />
+        <input type="number" step="any" min="0" asp-for="Cost" class="form-control" />
 
         <label>Country of Origin</label>
         <input asp-for="CountryOfOrigin" class="form-control" />

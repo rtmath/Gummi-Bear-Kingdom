@@ -1,0 +1,69 @@
+﻿
+
+#sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 10px;
+}
+
+#render-body {
+    text-align: center;
+}
+
+#sidebar-about-us-content, #sidebar-contact-content, #sidebar-product-content, #sidebar-about-us-active, #sidebar-contact-active, #sidebar-product-active {
+    display: none;
+}
+
+#sidebar-about-us:hover, #sidebar-contact:hover, #sidebar-product:hover,
+#sidebar-about-us-active:hover, #sidebar-contact-active:hover, #sidebar-product-active:hover {
+    cursor: pointer;
+}
+
+#main-page-image-container {
+    margin-top: 500px;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+#bgimg {
+    z-index: -1;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("http://www.albanesecandy.com/candy-store/images/products/popup/12-flavor-gummi-bears_7.jpg");
+    background-size: cover;
+    filter: url("http://www.albanesecandy.com/candy-store/images/products/popup/12-flavor-gummi-bears_7.jpg");
+    filter: blur(100%);
+}
+
+#bgimg-text {
+    color: white;
+    line-height: 500px;
+    font-size: 38px;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px black;
+    z-index: 0;
+}
+
+#bgimg-overlay {
+    z-index: 1;
+    background: linear-gradient(to bottom, white, transparent, white);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    transition: all 1s ease;
+}
+
+#bgimg-overlay:hover {
+    opacity: 0;
+    cursor: pointer;
+}
