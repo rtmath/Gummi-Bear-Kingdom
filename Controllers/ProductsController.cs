@@ -19,5 +19,11 @@ namespace GummiBearKingdom.Controllers
         {
             return View();
         }
+
+        public IActionResult Details(int id)
+        {
+            var selectedProduct = db.Products.FirstOrDefault(p => p.Id == id);
+            return View(selectedProduct);
+        }
     }
 }

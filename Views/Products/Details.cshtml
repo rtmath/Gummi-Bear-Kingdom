@@ -1,0 +1,12 @@
+﻿@model GummiBearKingdom.Models.Product
+
+<h1>Details</h1>
+
+<h2>@Model.Name</h2>
+<p>@Model.ProductDescription</p>
+<h4>@Model.CountryOfOrigin</h4>
+<h4>@Model.Cost</h4>
+<span>@Html.ActionLink("Edit", "Edit") | @Html.ActionLink("Delete", "Delete")</span>
+<hr />
+
+@Html.ActionLink("Back to Products", "Index")
