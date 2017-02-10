@@ -1,15 +1,31 @@
-﻿
+﻿body {
+   font-family: 'Pangolin', cursive;
+}
 
 #sidebar {
     position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
-    padding: 10px;
+    width: 20vw;
+    padding: 20px;
+    font-size: 20px;
 }
 
 #render-body {
     text-align: center;
+}
+
+#page-background {
+    background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background-9.jpg");
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#sidebar-about-us-content, #sidebar-contact-content, #sidebar-product-content {
+    background-color: rgba(232,231,211,.9);
+    margin-left: 10%;
 }
 
 #sidebar-about-us-content, #sidebar-contact-content, #sidebar-product-content, #sidebar-about-us-active, #sidebar-contact-active, #sidebar-product-active {
@@ -19,18 +35,21 @@
 #sidebar-about-us:hover, #sidebar-contact:hover, #sidebar-product:hover,
 #sidebar-about-us-active:hover, #sidebar-contact-active:hover, #sidebar-product-active:hover {
     cursor: pointer;
+    text-decoration: none;
 }
 
 #main-page-image-container {
-    margin-top: 500px;
     height: 500px;
     width: 500px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+    border-radius: 5px;
+    transform: translateY(30%);
 }
 
 #bgimg {
-    z-index: -1;
+    z-index: 0;
     height: 500px;
     width: 500px;
     position: absolute;
@@ -38,8 +57,7 @@
     left: 0;
     background-image: url("http://www.albanesecandy.com/candy-store/images/products/popup/12-flavor-gummi-bears_7.jpg");
     background-size: cover;
-    filter: url("http://www.albanesecandy.com/candy-store/images/products/popup/12-flavor-gummi-bears_7.jpg");
-    filter: blur(100%);
+    border-radius: 10px;
 }
 
 #bgimg-text {
@@ -48,22 +66,28 @@
     font-size: 38px;
     font-weight: 700;
     text-shadow: 4px 4px 4px black;
-    z-index: 0;
+    position: relative;
+    z-index: 2;
 }
 
 #bgimg-overlay {
-    z-index: 1;
-    background: linear-gradient(to bottom, white, transparent, white);
+    z-index: 3;
+    background: radial-gradient(circle, transparent, transparent, transparent, lightgrey);
     height: 500px;
     width: 500px;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: .4;
     transition: all 1s ease;
+    border-radius: 10px;
 }
 
 #bgimg-overlay:hover {
     opacity: 0;
     cursor: pointer;
+}
+
+#bgimg-atag {
+    margin-top: 10%;
+    text-decoration: none;
 }
