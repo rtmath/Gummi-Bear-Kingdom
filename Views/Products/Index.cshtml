@@ -1,12 +1,23 @@
 ﻿@model List<GummiBearKingdom.Models.Product>
 
-<h1>All Products</h1>
-<hr />
-@foreach (var product in Model)
-{
-    <h2>@product.Name</h2>
-    <h4>$@product.Cost</h4>
-    @Html.ActionLink("View Details", "Details", new { id = @product.Id })
-    <hr />
-}
-@Html.ActionLink("Add Product", "Create")
+<h1 id="product-index-header">All Products</h1>
+
+<div id="product-flex-container">
+
+    @foreach (var product in Model)
+    {
+        <div class="product-flex">
+            <div class="product-flex-img-border">
+                <img class="product-flex-img" src="http://www.albanesecandy.com/candy-store/images/products/sugar-free-assorted-fruit-gummi-bears_4.jpg" />
+            </div>
+            <div class="product-flex-content-border">
+                <h2>@product.Name</h2>
+                <h4>$@product.Cost</h4>
+                @Html.ActionLink("View Details", "Details", new { id = @product.Id })
+            </div>
+        </div>
+    }
+</div>
+<a href="/Products/Create" id="add-product-button">
+    Add Product
+</a>

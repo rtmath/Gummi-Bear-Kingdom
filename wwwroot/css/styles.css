@@ -1,4 +1,8 @@
-﻿body {
+﻿html, body {
+    height: 100%;
+}
+
+body {
    font-family: 'Pangolin', cursive;
 }
 
@@ -10,6 +14,7 @@
     width: 20vw;
     padding: 20px;
     font-size: 20px;
+    position: fixed;
 }
 
 #render-body {
@@ -18,9 +23,11 @@
 
 #page-background {
     background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background-9.jpg");
-
-    height: 100vh;
-    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 100%;
 }
 
 #sidebar-about-us-content, #sidebar-contact-content, #sidebar-product-content {
@@ -89,5 +96,62 @@
 
 #bgimg-atag {
     margin-top: 10%;
+    text-decoration: none;
+}
+
+/*Products Index*/
+
+#product-index-header {
+    margin: 0;
+}
+
+#product-flex-container {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-flex {
+    flex: 50%;
+    margin-bottom: 2%;
+
+}
+
+.product-flex-img {
+    height: 290px;
+    width: 290px;
+    box-shadow: inset 1px 1px 1px black;
+}
+
+.product-flex-img-border {
+    border: 5px solid #fff0e6;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 1px 1px 1px black;
+}
+
+.product-flex-content-border {
+    border: 5px solid #fff0e6;
+    background-color: #fff0e6;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 1px 1px 1px black;
+}
+
+#add-product-button {
+    position: absolute;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    border: 2px solid green;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    border-radius: 50px;
+    color: white;
     text-decoration: none;
 }
