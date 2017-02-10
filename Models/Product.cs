@@ -12,6 +12,7 @@ namespace GummiBearKingdom.Models
     {
         [Key]
         public int Id { get; set; }
+        public string Name { get; set; }
         public float Cost { get; set; }
         public string CountryOfOrigin { get; set; }
         public string ProductDescription { get; set; }

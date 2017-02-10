@@ -202,6 +202,8 @@ C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\G
 C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Controllers\ProductsController.cs
 C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Migrations\20170210160645_Initial.cs
 C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Migrations\20170210160645_Initial.Designer.cs
+C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Migrations\20170210162734_AddProductNameColumn.cs
+C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Migrations\20170210162734_AddProductNameColumn.Designer.cs
 C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Migrations\GummiContextModelSnapshot.cs
 C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Models\GummiContext.cs
 C:\Users\Echopraxia\Documents\Visual Studio 2015\Projects\GummiBearKingdom\src\GummiBearKingdom\Models\Product.cs
