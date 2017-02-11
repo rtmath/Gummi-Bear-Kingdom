@@ -70,6 +70,7 @@ body {
 }
 
 #sidebar-about-us-content, #sidebar-contact-content, #sidebar-product-content {
+    padding: 2%;
     background-color: rgba(232,231,211,.9);
     margin-left: 10%;
 }
@@ -157,14 +158,16 @@ body {
     border: 5px solid #ff99cc;
     border-radius: 25px;
     background-color: #ff99cc;
-    color: black;
+    color: white;
     transition: all .4s;
     width: 200px;
 }
 
 .edit-link:hover {
     text-decoration: none;
-    color: white;
+    color: black;
+    background-color: #ffa5d2;
+    border-color: #ffa5d2;
 }
 
 .edit-link:visited {
@@ -175,13 +178,13 @@ body {
     border: 5px solid #ff3333;
     border-radius: 25px;
     background-color: #ff3333;
-    color: black;
+    color: white;
     transition: all .4s;
 }
 
 .delete-link:hover {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .delete-link:visited {
@@ -195,6 +198,19 @@ body {
     .product-delete-header {
     margin: 0;
 
+}
+
+.gbk-home-link {
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px black;
+    text-decoration: none;
+}
+
+.gbk-home-link:hover {
+    text-decoration: none;
+    color: lightblue;
 }
 
 .product-index-header a {
@@ -420,4 +436,28 @@ body {
     border: 5px solid #ffb3b3;
     background-color: #ffb3b3;
     color: black;
+}
+
+/*Contact*/
+
+.contact-content-container {
+    background-color: #b3e0ff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 60%;
+    padding: 1%;
+    box-shadow: 1px 1px 1px black;
+}
+
+/*About Us*/
+
+.about-content-container {
+    background-color: #b3e0ff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 60%;
+    padding: 1%;
+    box-shadow: 1px 1px 1px black;
 }

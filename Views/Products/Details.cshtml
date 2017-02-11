@@ -11,7 +11,7 @@
     <br />
     <span id="details-content-desc">@Model.ProductDescription</span>
     <hr />
-    <span>@Html.ActionLink("Edit", "Edit", new { id = @Model.Id }, new { @class = "edit-link"}) | @Html.ActionLink("Delete", "Delete", new { id = @Model.Id }, new { @class = "delete-link" })</span>
+    <span>@Html.ActionLink("Edit", "Edit", new { id = @Model.Id }) &nbsp | &nbsp @Html.ActionLink("Delete", "Delete", new { id = @Model.Id })</span>
 </div>
 
 <a href="/Products" class="return-link">Return to Products</a>
