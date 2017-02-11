@@ -1,10 +1,15 @@
 ﻿html, body {
     height: 100%;
     background-color: lightgrey;
+    min-width: 550px;
 }
 
 body {
    font-family: 'Pangolin', cursive;
+}
+
+h1 {
+    margin: 0;
 }
 
 #sidebar {
@@ -78,6 +83,7 @@ body {
     }
     #mobile-sidebar {
         display: flex;
+        min-width: 550px;
     }
     #social-buttons {
         position: relative;
@@ -85,9 +91,13 @@ body {
         right: initial;
         height: 10vh;
         width: 100vw;
+        min-width: 550px;
     }
     #social-buttons > div {
         flex: 33%;
+    }
+    #main-page-image-container {
+
     }
 }
 
@@ -149,6 +159,7 @@ body {
     position: relative;
     border-radius: 5px;
     transform: translateY(30%);
+    margin-bottom: 25%;
 }
 
 #bgimg {
