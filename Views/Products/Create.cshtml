@@ -6,16 +6,16 @@
     <form asp-controller="Products" asp-action="Create" method="post">
         <div class="form-group">
             <label>Product Name</label>
-            <input asp-for="Name" class="form-control" />
+            <input asp-for="Name" class="form-control" required />
 
             <label>Description</label>
-            <input asp-for="ProductDescription" maxlength="255" class="form-control" />
+            <input asp-for="ProductDescription" maxlength="255" class="form-control" required/>
 
             <label>Cost</label>
-            <input type="number" step="any" min="0" asp-for="Cost" class="form-control" />
+            <input type="number" step="any" min="0" asp-for="Cost" class="form-control" required/>
 
             <label>Country of Origin</label>
-            <input asp-for="CountryOfOrigin" class="form-control" />
+            <input asp-for="CountryOfOrigin" class="form-control" required/>
 
             <button class="submit-button" type="submit">Add New Product</button>
         </div>

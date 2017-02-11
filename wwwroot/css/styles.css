@@ -8,6 +8,7 @@ body {
 }
 
 #sidebar {
+    display: inline;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,6 +17,23 @@ body {
     padding: 20px;
     font-size: 20px;
     position: fixed;
+}
+
+#mobile-sidebar {
+    display: none;
+    height: 10vh;
+    width: 100vw;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#mobile-sidebar > a {
+    flex: 33%;
+}
+#mobile-sidebar > span {
+    flex: 100%;
 }
 
 #social-buttons {
@@ -54,6 +72,25 @@ body {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 900px) {
+    #sidebar {
+        display: none;
+    }
+    #mobile-sidebar {
+        display: flex;
+    }
+    #social-buttons {
+        position: relative;
+        top: initial;
+        right: initial;
+        height: 10vh;
+        width: 100vw;
+    }
+    #social-buttons > div {
+        flex: 33%;
+    }
+}
+
 #render-body {
     text-align: center;
 }
@@ -75,12 +112,31 @@ body {
     margin-left: 10%;
 }
 
-#sidebar-about-us-content, #sidebar-contact-content, #sidebar-product-content, #sidebar-about-us-active, #sidebar-contact-active, #sidebar-product-active {
+#mobile-sidebar-about-us-content, #mobile-sidebar-contact-content, #mobile-sidebar-product-content {
+    padding: 2%;
+    background-color: rgba(232,231,211,.9);
+}
+
+#sidebar-about-us-content, #sidebar-contact-content, 
+    #sidebar-product-content, #sidebar-about-us-active,
+    #sidebar-contact-active, #sidebar-product-active {
     display: none;
 }
 
 #sidebar-about-us:hover, #sidebar-contact:hover, #sidebar-product:hover,
 #sidebar-about-us-active:hover, #sidebar-contact-active:hover, #sidebar-product-active:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#mobile-sidebar-about-us-content, #mobile-sidebar-contact-content, 
+    #mobile-sidebar-product-content, #mobile-sidebar-about-us-active,
+    #mobile-sidebar-contact-active, #mobile-sidebar-product-active {
+    display: none;
+}
+
+#mobile-sidebar-about-us:hover, #mobile-sidebar-contact:hover, #mobile-sidebar-product:hover,
+#mobile-sidebar-about-us-active:hover, #mobile-sidebar-contact-active:hover, #mobile-sidebar-product-active:hover {
     cursor: pointer;
     text-decoration: none;
 }
@@ -206,11 +262,13 @@ body {
     font-weight: 700;
     text-shadow: 4px 4px 4px black;
     text-decoration: none;
+    transition: all 0.4s; 
 }
 
 .gbk-home-link:hover {
     text-decoration: none;
     color: lightblue;
+
 }
 
 .product-index-header a {
@@ -267,6 +325,7 @@ body {
     color: white;
     text-decoration: none;
     transition: all .4s;
+    z-index: 10;
 }
 
 #add-product-button span {

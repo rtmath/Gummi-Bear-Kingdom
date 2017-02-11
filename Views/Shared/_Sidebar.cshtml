@@ -1,4 +1,4 @@
-﻿<content id="sidebar">
+﻿<div id="sidebar">
     <a id="sidebar-product">+ Products</a>
     <a id="sidebar-product-active">- Products</a>
      <span id="sidebar-product-content"><br />@Html.ActionLink("All Products", "Index", "Products", null)</span>
@@ -10,4 +10,18 @@
     <a id="sidebar-contact"> + Contact</a>
     <a id="sidebar-contact-active"> - Contact</a>
     <span id="sidebar-contact-content"><br />@Html.ActionLink("Give Us A Ring!", "Contact", "Home", null)</span>
-</content>
+</div>
+
+<div id="mobile-sidebar">
+    <a id="mobile-sidebar-product">+ Products</a>
+    <a id="mobile-sidebar-product-active">- Products</a>
+    <span id="mobile-sidebar-product-content">@Html.ActionLink("All Products", "Index", "Products", null)</span>
+
+    <a id="mobile-sidebar-about-us"> + About Us</a>
+    <a id="mobile-sidebar-about-us-active"> - About Us</a>
+    <span id="mobile-sidebar-about-us-content">@Html.ActionLink("Our Mission", "About", "Home", null)</span>
+
+    <a id="mobile-sidebar-contact"> + Contact</a>
+    <a id="mobile-sidebar-contact-active"> - Contact</a>
+    <span id="mobile-sidebar-contact-content">@Html.ActionLink("Give Us A Ring!", "Contact", "Home", null)</span>
+</div>
